@@ -1,0 +1,427 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.4ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.3ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.3ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy_all as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `words`[0m
+Completed 204 No Content in 1ms (ActiveRecord: 0.4ms)
+  [1m[35m (3.0ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (1.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.3ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.3ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words` WHERE `words`.`id` = 1
+Completed 200 OK in 7ms (ActiveRecord: 0.9ms)
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1
+Completed 200 OK in 0ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by AnagramsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words` WHERE `words`.`id` = 1
+Completed 200 OK in 6ms (ActiveRecord: 0.9ms)
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35m (1.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1
+Completed 200 OK in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy_all as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words`[0m
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[36mWord Load (0.3ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words` WHERE `words`.`id` = 1
+Completed 200 OK in 6ms (ActiveRecord: 0.9ms)
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1
+Completed 200 OK in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy_all as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words`[0m
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist"]}
+  [1m[35m (0.4ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:02:40', '2017-01-17 14:02:40')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:02:40', '2017-01-17 14:02:40')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 19ms (ActiveRecord: 2.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[36m (0.3ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words` WHERE `words`.`id` = 1
+Completed 200 OK in 2ms (ActiveRecord: 0.4ms)
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1
+Completed 200 OK in 0ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy_all as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words`[0m
+Completed 204 No Content in 0ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:03:26', '2017-01-17 14:03:26')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:03:26', '2017-01-17 14:03:26')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 16ms (ActiveRecord: 2.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist", "read"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:03:26', '2017-01-17 14:03:26')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:03:26', '2017-01-17 14:03:26')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'read' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 12ms (ActiveRecord: 1.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words` WHERE `words`.`id` = 1[0m
+Completed 200 OK in 2ms (ActiveRecord: 0.5ms)
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1[0m
+Completed 200 OK in 0ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy_all as HTML
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words`
+Completed 204 No Content in 0ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:04:04', '2017-01-17 14:04:04')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:04:04', '2017-01-17 14:04:04')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 15ms (ActiveRecord: 1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist", "read"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:04:04', '2017-01-17 14:04:04')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:04:04', '2017-01-17 14:04:04')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'read' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 8ms (ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[35m (0.3ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words` WHERE `words`.`id` = 1[0m
+Completed 200 OK in 2ms (ActiveRecord: 0.3ms)
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1[0m
+Completed 200 OK in 1ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy_all as HTML
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words`
+Completed 204 No Content in 0ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:07:13', '2017-01-17 14:07:13')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (24.9ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:07:13', '2017-01-17 14:07:13')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 39ms (ActiveRecord: 26.5ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+Processing by WordsController#create as HTML
+  Parameters: {"words"=>["silent", "enlist", "read"]}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'silent' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'silent', '2017-01-17 14:07:13', '2017-01-17 14:07:13')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'enlist' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `words` (`sorted_chars`, `chars`, `created_at`, `updated_at`) VALUES ('eilnst', 'enlist', '2017-01-17 14:07:13', '2017-01-17 14:07:13')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mWord Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `words` WHERE `words`.`chars` = BINARY 'read' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 8ms (ActiveRecord: 1.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"dare"}
+  [1m[35m (0.2ms)[0m  SELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'ader' AND (chars != 'dare')
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#show as HTML
+  Parameters: {"word"=>"snufflufagus"}
+  [1m[36m (0.2ms)[0m  [1mSELECT `words`.`chars` FROM `words` WHERE `words`.`sorted_chars` = 'afffglnssuuu' AND (chars != 'snufflufagus')[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"read"}
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `words` WHERE `words`.`id` = 1[0m
+Completed 200 OK in 2ms (ActiveRecord: 0.5ms)
+  [1m[35mWord Load (0.2ms)[0m  SELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'read' LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by WordsController#destroy as HTML
+  Parameters: {"word"=>"supercalifragilisticexpialidocious"}
+  [1m[36mWord Load (0.2ms)[0m  [1mSELECT  `words`.* FROM `words` WHERE `words`.`chars` = 'supercalifragilisticexpialidocious' LIMIT 1[0m
+Completed 200 OK in 0ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WordsController#destroy_all as HTML
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `words`
+Completed 204 No Content in 1ms (ActiveRecord: 0.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `words`[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `words`
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
