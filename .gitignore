@@ -1,1 +1,7 @@
 .DS_STORE
+
+.rspec
+log/development.log
+log/test.log
+log
+tmp

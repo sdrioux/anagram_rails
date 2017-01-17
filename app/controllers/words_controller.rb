@@ -12,7 +12,7 @@ class WordsController < ApplicationController
       Word.create(sorted_chars: Word.sort(word), chars: word)
     end
 
-    head :ok
+    head :created
   end
 
   # @url /anagrams/:word
@@ -27,6 +27,8 @@ class WordsController < ApplicationController
       .where(sorted_chars: Word.sort(params[:word]))
       .where("chars != ?", params[:word])
       .pluck(:chars)
+
+      results = results.first(params[:limit].to_i) if(params[:limit])
 
 
     render json: { anagrams: results }
@@ -52,5 +54,18 @@ class WordsController < ApplicationController
   def destroy_all
     Word.delete_all
     head :no_content
+  end
+
+  def stats
+    stats = Word.select("MAX(LENGTH(sorted_chars)) as max_length, MIN(LENGTH(sorted_chars)) as min_length, AVG(LENGTH(sorted_chars)) as mean_length, COUNT(*) as word_count").first
+
+    render json: {
+      stats: {
+        max_length:  stats.max_length,
+        min_length:  stats.min_length,
+        mean_length: stats.mean_length,
+        word_count:  stats.word_count
+      }
+    }
   end
 end

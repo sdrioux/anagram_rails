@@ -19,9 +19,6 @@ class Word < ActiveRecord::Base
       columns = [:sorted_chars, :chars]
 
       Word.import columns, words_to_import, validate: false
-      # import returns all the data imported, which is a lot of info to put on
-      # your console.
-      return true
     end
   end
 end

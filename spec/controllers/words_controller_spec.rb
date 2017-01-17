@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe WordsController, type: :controller do
+  fixtures :all
+
   describe "adding one or more words to the corpus" do
     it "adds the words if they dont already exist" do
       expect {
@@ -9,7 +11,7 @@ RSpec.describe WordsController, type: :controller do
         Word.count
       }.by(2)
 
-      expect(response.status).to eql(200)
+      expect(response.status).to eql(201)
     end
 
     it "succeeds if one or more words are already in the corpus" do
@@ -20,7 +22,7 @@ RSpec.describe WordsController, type: :controller do
         Word.count
       }.by(2)
 
-      expect(response.status).to eql(200)
+      expect(response.status).to eql(201)
     end
   end
 
@@ -37,6 +39,13 @@ RSpec.describe WordsController, type: :controller do
 
       result = JSON.parse(response.body)
       expect(result["anagrams"]).to eql([])
+    end
+
+    it "optionally limits the results" do
+      get :show, word: 'dare', limit: 1
+
+      result = JSON.parse(response.body)
+      expect(result["anagrams"]).to eql(['read'])
     end
   end
 
@@ -60,6 +69,18 @@ RSpec.describe WordsController, type: :controller do
       count = Word.count
       expect(response.status).to eql(204)
       expect(Word.count).to eql(0)
+    end
+  end
+
+  describe "getting statistics about the database" do
+    it "returns statistics available" do
+      get :stats
+      expect(JSON.parse(response.body)["stats"]).to eql({
+        "max_length" => 4,
+        "mean_length" => "4.0",
+        "min_length" => 4,
+        "word_count" => 2
+      })
     end
   end
 end
